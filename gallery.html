@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/l.jpg" alt="Logo">
+            <span>Pearlswood English Academy</span>
+        </div>
+
+        <a href="" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="gallery-section">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h1>Our Gallery</h1>
+                    <p>Our gallery captures the vibrant moments of learning, creativity,
+                        and achievement at Pearlswood English Academy. From classroom activities
+                        to special events, every snapshot reflects our students' growth, confidence,
+                        and joy in mastering the English language.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opening Ceremony Album -->
+        <div class="album-container">
+            <h2 class="album-title">Opening Ceremony</h2>
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery" onclick="openModal('img/opening/1.JPG', 'image')">
+                        <div class="img-section">
+                            <img src="img/opening/1.JPG" alt="Opening Ceremony">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/opening/2.heic', 'image')">
+                        <div class="img-section">
+                            <img src="img/opening/2.heic" alt="Opening Ceremony">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/opening/3.heic', 'image')">
+                        <div class="img-section">
+                            <img src="img/opening/3.heic" alt="Opening Ceremony">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/opening/4.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/opening/4.jpg" alt="Opening Ceremony">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Classroom Photos Album -->
+        <div class="album-container">
+            <h2 class="album-title">Classroom Photos</h2>
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery" onclick="openModal('img/old/1.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/1.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/2.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/2.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/3.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/3.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/4.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/4.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/5.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/5.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/6.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/6.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/7.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/7.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/8.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/8.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/9.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/9.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/10.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/10.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/11.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/11.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/12.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/12.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/13.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/13.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/14.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/14.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/old/15.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/old/15.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /1.JPG', 'image')">
+                        <div class="img-section">
+                            <img src="img/Pearlswood /1.JPG" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /vid1.mp4', 'video')">
+                        <div class="img-section">
+                            <video src="img/Pearlswood /vid1.mp4" muted></video>
+                            <div class="overlay">
+                                <i class="fas fa-play overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /vid2.mp4', 'video')">
+                        <div class="img-section">
+                            <video src="img/Pearlswood /vid2.mp4" muted></video>
+                            <div class="overlay">
+                                <i class="fas fa-play overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /2.JPG', 'image')">
+                        <div class="img-section">
+                            <img src="img/Pearlswood /2.JPG" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /3.jpeg', 'image')">
+                        <div class="img-section">
+                            <img src="img/Pearlswood /3.jpeg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /4.jpeg', 'image')">
+                        <div class="img-section">
+                            <img src="img/Pearlswood /4.jpeg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /5.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/Pearlswood /5.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /6.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/Pearlswood /6.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /7.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/Pearlswood /7.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/Pearlswood /vid3.mp4', 'video')">
+                        <div class="img-section">
+                            <video src="img/Pearlswood /vid3.mp4" muted></video>
+                            <div class="overlay">
+                                <i class="fas fa-play overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/gp.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/gp.jpg" alt="Classroom">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aurudu Festival Album -->
+        <div class="album-container">
+            <h2 class="album-title">Aurudu Festival</h2>
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery" onclick="openModal('img/aurudu/1.HEIC', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/1.HEIC" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/2.HEIC', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/2.HEIC" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/3.HEIC', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/3.HEIC" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/4.HEIC', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/4.HEIC" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/5.HEIC', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/5.HEIC" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/6.HEIC', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/6.HEIC" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/7.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/7.jpg" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/8.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/8.jpg" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/9.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/9.jpg" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/10.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/aurudu/10.jpg" alt="Aurudu Festival">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/aurudu/vid.mp4', 'video')">
+                        <div class="img-section">
+                            <video src="img/aurudu/vid.mp4" muted></video>
+                            <div class="overlay">
+                                <i class="fas fa-play overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Christmas Celebration Album -->
+        <div class="album-container">
+            <h2 class="album-title">Christmas Celebration</h2>
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery" onclick="openModal('img/christmas/1.MP4', 'video')">
+                        <div class="img-section">
+                            <video src="img/christmas/1.MP4" muted></video>
+                            <div class="overlay">
+                                <i class="fas fa-play overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/2.jpeg', 'image')">
+                        <div class="img-section">
+                            <img src="img/christmas/2.jpeg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/3.JPG', 'image')">
+                        <div class="img-section">
+                            <img src="img/christmas/3.JPG" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/4.jpeg', 'image')">
+                        <div class="img-section">
+                            <img src="img/christmas/4.jpeg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/5.jpeg', 'image')">
+                        <div class="img-section">
+                            <img src="img/christmas/5.jpeg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/6.jpeg', 'image')">
+                        <div class="img-section">
+                            <img src="img/christmas/6.jpeg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/7.MP4', 'video')">
+                        <div class="img-section">
+                            <video src="img/christmas/7.MP4" muted></video>
+                            <div class="overlay">
+                                <i class="fas fa-play overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/8.HEIC', 'image')">
+                        <div class="img-section">
+                            <img src="img/christmas/8.HEIC" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/christmas/vid.MOV', 'video')">
+                        <div class="img-section">
+                            <video src="img/christmas/vid.MOV" muted></video>
+                            <div class="overlay">
+                                <i class="fas fa-play overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Exam Results Album -->
+        <div class="album-container">
+            <h2 class="album-title">Exam Results</h2>
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery" onclick="openModal('img/ketres.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/ketres.jpg">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/res.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/res.jpg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/flres.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/flres.jpg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/ketres2.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/ketres2.jpg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/petres.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/petres.jpg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery" onclick="openModal('img/fceres.jpg', 'image')">
+                        <div class="img-section">
+                            <img src="img/fceres.jpg" alt="Christmas Celebration">
+                            <div class="overlay">
+                                <i class="fas fa-expand-alt overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="mediaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalMediaContainer"></div>
+            <div class="modal-controls">
+                <button class="modal-btn" onclick="downloadMedia()">
+                    <i class="fas fa-download"></i> Download
+                </button>
+                <button class="modal-btn" onclick="shareMedia()">
+                    <i class="fas fa-share"></i> Share
+                </button>
+                <button class="modal-btn" onclick="closeModal()">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="info-section">
+        <div class="info-content">
+            <div class="info-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you!</p>
+            </div>
+            <div class="contact">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-details">
+                        164/2C, Makola South, Makola
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div class="contact-details">
+                        <a href="tel:+9477459 1453">+94 (77) 459 1453</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div class="contact-details">
+                        <a href="tel:+9477539 0806">+94 (77) 539 0806</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-details">
+                        <a href="mailto:samanthinimalka@gmail.com">samanthinimalka@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100057179901327" class="social-link"
+                    aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@pearlswood.englis?_t=ZS-8ysLMBONZbd&_r=1" class="social-link"
+                    aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/pearlswoodenglisacademy?igsh=MTBmcnVvbnBiOGZtOA=="
+                    class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a class="link" href="index.html">Home</a><br>
+            <a class="link" href="about.html">About</a><br>
+            <a class="link" href="gallery.html">Gallery</a><br>
+            <a class="link" href="staff.html">Staff</a><br>
+            <a class="link" href="contact.html">Contact</a><br>
+            <a class="link" href="faq.html">FAQ</a><br>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
