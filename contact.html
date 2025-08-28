@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/l.jpg" alt="Logo">
+            <span>Pearlswood English Academy</span>
+        </div>
+        <a href="" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact-container">
+        <div class="contact-card">
+            <section class="form-section">
+                <div class="form-header">
+                    <h2>Contact Us</h2>
+                    <p>Have questions? We're here to help.</p>
+                </div>
+
+                <!-- Message container for success/error messages -->
+                <div id="form-message" class="form-message"></div>
+
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkgvnpoa" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+
+                    <!-- Hidden fields for better email handling -->
+                    <input type="hidden" name="_subject" value="New Contact Form Submission from Pearlswood Academy">
+                    <input type="hidden" name="_next" value="https://your-website.com/contact.html?sent=true">
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Send</span>
+                    </button>
+                </form>
+            </section>
+            <section class="info-section">
+                <div class="info-content">
+                    <div class="info-header">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you!</p>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div class="contact-details">
+                                167/2, Makola South, Makola
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div class="contact-details">
+                                <a href="tel:+9477459 1453">+94 (77) 459 1453</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div class="contact-details">
+                                <a href="tel:+9477539 0806">+94 (77) 539 0806</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div class="contact-details">
+                                <a href="mailto:samanthinimalka@gmail.com">samanthinimalka@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100057179901327" class="social-link"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@pearlswood.englis?_t=ZS-8ysLMBONZbd&_r=1" class="social-link"
+                            aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pearlswoodenglisacademy?igsh=MTBmcnVvbnBiOGZtOA=="
+                            class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
