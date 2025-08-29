@@ -370,7 +370,7 @@
         padding: 0px 60px;
     }
 }
-
+/*contact us page*/
 .info-section {
   flex: 1;
   padding: 25px;
@@ -516,6 +516,70 @@
 .submit-btn:hover {
   background: #3a56d4;
 }
+/* ✅ Responsive Fixes for Contact Us Page */
+@media (max-width: 992px) {
+  .contact-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 8%;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    height: auto; /* let it expand naturally */
+  }
+
+  .info-section,
+  .form-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-control {
+    width: 100%; /* expand inputs for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    grid-template-columns: 1fr; /* stack info items */
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .form-header h2 {
+    font-size: 20px;
+  }
+
+  .form-header p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .form-control {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
 
 /*Staff*/
 .team-section{
@@ -533,7 +597,6 @@
 .team-section .container .row .title{
     text-align: center;
     margin-top: 30px;
-
 }
 .team-section .container .row .title h1{
     font-size: 35px;
@@ -541,7 +604,6 @@
     letter-spacing: 1.5px;
     color: #eb6234;
     font-weight: bold;
-
 }
 .team-section .container .row .title p{
     font-size: 18px;
@@ -581,7 +643,6 @@
     width: 150px;
     border-radius: 80%;
     border: 6px solid #fff;
-
 }
 .team-section .container .team-card .card .content{
     width: 100%;
@@ -592,27 +653,32 @@
     margin-top: 10px;
     letter-spacing: 1.5px;
     color: #639ab8;
-
 }
 .team-section .container .team-card .card .content h4{
     font-size: 17px;
     margin-top: 10px;
     letter-spacing: 1.5px;
     color: #6e6e6e;
-
 }
 .team-section .container .team-card .card .content p{
     font-size: 15px;
     margin: 16px 0px;
     line-height: 1.5;
     color: #6c6c6c;
+}
 
+/* ✅ Responsive fixes */
+@media screen and (max-width: 992px){
+    .team-section .container .team-card{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media screen and (max-width: 768px){
     .team-section .container .team-card{
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: 1fr;
     }
 }
+
 
 /* Gallery */
 .gallery  *{
