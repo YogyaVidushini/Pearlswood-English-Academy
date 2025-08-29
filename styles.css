@@ -791,11 +791,11 @@
 /* Standard mobile phones */
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 8px 15px;
+    padding: 5px 60px;
   }
   
   .navbar .logo {
-    font-size: clamp(22px, 5vw, 26px);
+    font-size: clamp(20px, 4vw, 24px);
   }
   
   .toggle-btn {
@@ -1052,6 +1052,7 @@
     font-size: 13px;
   }
 }
+
 
 /* Content sections for all screen sizes */
 @media screen and (max-width: 768px) {
