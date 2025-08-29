@@ -707,8 +707,160 @@
 .submit-btn:hover {
   background: #3a56d4;
 }
+/* =====================================
+   NAVBAR RESPONSIVE STYLES
+   ===================================== */
 
-/* CONTACT PAGE RESPONSIVE STYLES */
+/* Desktop navbar (default) */
+.toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  color: inherit;
+}
+
+/* Tablet and large mobile */
+@media screen and (max-width: 992px) {
+  .toggle-btn {
+    display: flex;
+    padding-right: 15px;
+  }
+  
+  .navbar {
+    padding: 10px 20px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar .logo {
+    font-size: clamp(24px, 4vw, 28px);
+    padding-left: 0;
+  }
+  
+  .nav-menu {
+    display: none;
+    width: 100%;
+    order: 3; /* Move below logo and toggle button */
+  }
+  
+  .nav-menu ul {
+    width: 100%;
+    background-color: #475f6b;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .nav-menu ul li {
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .nav-menu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-menu ul li a {
+    text-transform: uppercase;
+    padding: 15px 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-menu ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+  
+  .nav-menu.active {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+  }
+}
+
+/* Standard mobile phones */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+  
+  .navbar .logo {
+    font-size: clamp(22px, 5vw, 26px);
+  }
+  
+  .toggle-btn {
+    padding-right: 10px;
+    font-size: 22px;
+  }
+  
+  .nav-menu ul li a {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Small mobile phones */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+  
+  .navbar .logo {
+    font-size: 20px;
+  }
+  
+  .toggle-btn {
+    padding-right: 8px;
+    font-size: 20px;
+  }
+  
+  .nav-menu ul li a {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Very small phones */
+@media screen and (max-width: 360px) {
+  .navbar {
+    padding: 6px 8px;
+  }
+  
+  .navbar .logo {
+    font-size: 18px;
+  }
+  
+  .nav-menu ul li a {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+/* Slide down animation for mobile menu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================
+   CONTACT PAGE RESPONSIVE STYLES
+   ===================================== */
 
 /* Large tablets and desktop */
 @media (max-width: 1200px) {
