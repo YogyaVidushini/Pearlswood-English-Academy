@@ -272,294 +272,104 @@
   text-decoration: underline;
 }
 
-/* Mobile First Approach - Base styles for all mobile devices */
-@media screen and (max-width: 768px) {
-  /* Navigation Styles */
-  .toggle-btn {
-    display: flex;
-    padding-right: 8px;
-  }
-  
-  .navbar {
-    padding: 0;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .navbar .logo {
-    font-size: clamp(24px, 5vw, 28px); /* Responsive font size */
-    padding-left: clamp(20px, 8vw, 60px); /* Responsive padding */
-  }
-  
-  .nav-menu {
-    display: none;
-    width: 100%;
-  }
-  
-  .nav-menu ul {
-    width: 100%;
-    background-color: #475f6b;
-    flex-direction: column;
-    padding-right: 0;
-    margin: 0;
-  }
-  
-  .nav-menu ul li {
-    padding-left: clamp(15px, 5vw, 30px);
-    width: 100%;
-  }
-  
-  .nav-menu ul li a {
-    text-transform: uppercase;
-    display: block;
-    padding: 12px 0;
-  }
-  
-  .nav-menu.active {
-    display: block;
-  }
-
-  /* Content Section Styles */
-  .content-section h1 {
-    font-size: clamp(28px, 7vw, 45px);
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .content-section .button {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .content-section .button a {
-    padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 18px);
-    margin: 8px;
-    display: inline-block;
-    font-size: clamp(14px, 3vw, 16px);
-  }
-
-  /* Container and Layout */
-  .container {
-    width: 100%;
-    margin: 20px 0;
-    padding: 0 clamp(15px, 5vw, 60px);
-  }
-  
-  .container .row {
-    flex-direction: column;
-    padding: 0;
-    gap: 20px;
-  }
-  
-  .content {
-    width: 100%;
-    margin: 20px 0;
-    padding: 0 15px;
-  }
-  
-  .content h1 {
-    font-size: clamp(28px, 6vw, 36px);
-    margin: 15px 0;
-  }
-  
-  .content h3 {
-    font-size: clamp(16px, 4vw, 19px);
-    margin: 12px 0;
-  }
-  
-  .content a {
-    font-size: clamp(15px, 3.5vw, 18px);
-  }
-  
-  /* Image Section */
-  .image-section img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 8px;
-  }
-
-  /* News Section */
-  .news-section .section-content {
-    padding: 0 clamp(15px, 5vw, 60px);
-  }
-  
-  .news-section .section-content .cards {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin: 20px 0;
-  }
+@media screen and (max-width: 768px){
+    .toggle-btn{
+        display: flex;
+        padding-right: 5px;
+    }
+    .navbar{
+        padding: 0px 0px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .logo{
+        font-size: 28px;
+        padding-left: 60px;
+    }
+    .nav-menu{
+        display: none;
+        width: 100%;
+    }
+    .nav-menu ul{
+        width: 100%;
+        background-color: #475f6b;
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .nav-menu ul li{
+        padding-left: 30px;
+    }
+    .nav-menu ul li a{
+        text-transform: uppercase;    
+    }
+    .nav-menu.active{
+        display: block;
+    }
 }
 
-/* Small Mobile Devices (320px - 480px) */
-@media screen and (max-width: 480px) {
-  .navbar .logo {
-    font-size: 22px;
-    padding-left: 15px;
-  }
-  
-  .content-section h1 {
-    font-size: 24px;
-    margin: 15px 0;
-  }
-  
-  .content-section .button a {
-    padding: 8px 12px;
-    margin: 5px;
-    font-size: 14px;
-  }
-  
-  .container {
-    padding: 0 15px;
-  }
-  
-  .content {
-    padding: 0 10px;
-  }
-  
-  .content h1 {
-    font-size: 24px;
-  }
-  
-  .content h3 {
-    font-size: 16px;
-  }
-  
-  .content a {
-    font-size: 15px;
-  }
-  
-  .nav-menu ul li {
-    padding-left: 15px;
-  }
-  
-  .nav-menu ul li a {
-    font-size: 14px;
-    padding: 10px 0;
-  }
+@media screen and (max-width: 768px){
+    .content-section h1{
+        font-size: 45px;
+    }
+    .content-section .button a{
+        padding: 12px 18px;
+        margin: 10px 10px;
+    }
+
 }
 
-/* Very Small Mobile Devices (up to 360px) */
-@media screen and (max-width: 360px) {
-  .navbar .logo {
-    font-size: 20px;
-    padding-left: 10px;
-  }
-  
-  .content-section h1 {
-    font-size: 22px;
-  }
-  
-  .content-section .button a {
-    padding: 6px 10px;
-    margin: 3px;
-    font-size: 13px;
-  }
-  
-  .container {
-    margin: 15px 0;
-    padding: 0 10px;
-  }
-  
-  .content h1 {
-    font-size: 22px;
-  }
-  
-  .content h3 {
-    font-size: 15px;
-  }
-  
-  .content a {
-    font-size: 14px;
-  }
-  
-  .news-section .section-content {
-    padding: 0 10px;
-  }
+@media screen and (max-width: 550px){
+    .content-section h1{
+        font-size: 30px;
+    }
+    .content-section .button a{
+        padding: 8px 12px;
+        
+    }
 }
 
-/* Large Mobile Devices and Small Tablets (481px - 768px) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .content-section h1 {
-    font-size: 40px;
-  }
-  
-  .content-section .button a {
-    padding: 12px 16px;
-    font-size: 16px;
-  }
-  
-  .content h1 {
-    font-size: 32px;
-  }
-  
-  .content h3 {
-    font-size: 18px;
-  }
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        margin: 25px 0px;
+    }
+    .container .row{
+        flex-direction: column;
+        padding: 0px 60px;
+    }
+    .content{
+        width: 100%;
+        margin: 25px 0px;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .content h1{
+        font-size: 36px;
+    }
+    .content h3{
+        font-size: 19px;
+    }
+    .content a{
+        font-size: 18px;
+    }
 }
 
-/* Medium tablets */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .news-section .section-content .cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+@media screen and (max-width: 992px){
+    .news-section .section-content .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
-/* Large screens (keep original desktop styles) */
-@media screen and (min-width: 993px) {
-  .toggle-btn {
-    display: none;
-  }
-  
-  .nav-menu {
-    display: block !important;
-  }
-  
-  .news-section .section-content .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Additional improvements for better mobile experience */
-@media screen and (max-width: 768px) {
-  /* Ensure touch targets are large enough */
-  .nav-menu ul li a,
-  .content-section .button a {
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Improve text readability */
-  body {
-    line-height: 1.6;
-  }
-  
-  /* Better spacing for mobile */
-  .content-section {
-    padding: 20px 0;
-  }
-  
-  .container {
-    box-sizing: border-box;
-  }
-  
-  /* Ensure images don't overflow */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Better button spacing */
-  .content-section .button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
+@media screen and (max-width: 768px){
+    .news-section .section-content .cards{
+        grid-template-columns: 1fr;
+    }
+    .news-section .section-content{
+        padding: 0px 60px;
+    }
 }
 /*contact us page*/
 .info-section {
@@ -707,514 +517,70 @@
 .submit-btn:hover {
   background: #3a56d4;
 }
-/* =====================================
-   NAVBAR RESPONSIVE STYLES
-   ===================================== */
-
-/* Desktop navbar (default) */
-.toggle-btn {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 8px;
-  color: inherit;
-}
-
-/* Tablet and large mobile */
-@media screen and (max-width: 992px) {
-  .toggle-btn {
-    display: flex;
-    padding-right: 15px;
-  }
-  
-  .navbar {
-    padding: 10px 20px;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .navbar .logo {
-    font-size: clamp(24px, 4vw, 28px);
-    padding-left: 0;
-  }
-  
-  .nav-menu {
-    display: none;
-    width: 100%;
-    order: 3; /* Move below logo and toggle button */
-  }
-  
-  .nav-menu ul {
-    width: 100%;
-    background-color: #475f6b;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-  
-  .nav-menu ul li {
-    padding: 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
-  
-  .nav-menu ul li:last-child {
-    border-bottom: none;
-  }
-  
-  .nav-menu ul li a {
-    text-transform: uppercase;
-    padding: 15px 20px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    transition: background-color 0.3s;
-  }
-  
-  .nav-menu ul li a:hover {
-    background-color: rgba(255,255,255,0.1);
-  }
-  
-  .nav-menu.active {
-    display: block;
-    animation: slideDown 0.3s ease-out;
-  }
-}
-
-/* Standard mobile phones */
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 5px 60px;
-  }
-  
-  .navbar .logo {
-    font-size: clamp(20px, 4vw, 24px);
-  }
-  
-  .toggle-btn {
-    padding-right: 10px;
-    font-size: 22px;
-  }
-  
-  .nav-menu ul li a {
-    padding: 12px 15px;
-    font-size: 14px;
-  }
-}
-
-/* Small mobile phones */
-@media screen and (max-width: 480px) {
-  .navbar {
-    padding: 8px 10px;
-  }
-  
-  .navbar .logo {
-    font-size: 20px;
-  }
-  
-  .toggle-btn {
-    padding-right: 8px;
-    font-size: 20px;
-  }
-  
-  .nav-menu ul li a {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-}
-
-/* Very small phones */
-@media screen and (max-width: 360px) {
-  .navbar {
-    padding: 6px 8px;
-  }
-  
-  .navbar .logo {
-    font-size: 18px;
-  }
-  
-  .nav-menu ul li a {
-    padding: 10px;
-    font-size: 12px;
-  }
-}
-
-/* Slide down animation for mobile menu */
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* =====================================
-   CONTACT PAGE RESPONSIVE STYLES
-   ===================================== */
-
-/* Large tablets and desktop */
-@media (max-width: 1200px) {
-  .contact-container {
-    width: 85%;
-    margin-left: 7.5%;
-  }
-}
-
-/* Medium tablets */
+/* ✅ Responsive Fixes for Contact Us Page */
 @media (max-width: 992px) {
   .contact-container {
     width: 90%;
     margin-left: 5%;
-    margin-top: clamp(6%, 8vw, 8%);
+    margin-top: 8%;
   }
-  
+
   .contact-card {
     flex-direction: column;
-    height: auto;
-    min-height: auto;
+    height: auto; /* let it expand naturally */
   }
-  
+
   .info-section,
   .form-section {
     width: 100%;
-    padding: clamp(15px, 4vw, 25px);
-  }
-  
-  .form-control {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-/* Standard mobile and small tablets */
-@media (max-width: 768px) {
-  .contact-container {
-    width: 92%;
-    margin-left: 4%;
-    margin-top: 6%;
-  }
-  
-  .info-section {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 20px;
     padding: 20px;
   }
-  
-  .contact-item {
-    justify-content: center;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: rgba(255,255,255,0.05);
-  }
-  
-  .contact-item i {
-    margin-right: 10px;
-    font-size: 18px;
-  }
-  
-  .social-links {
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  .social-links a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: rgba(255,255,255,0.1);
-    transition: all 0.3s;
-  }
-  
-  .form-header h2 {
-    font-size: clamp(18px, 4vw, 22px);
-    margin-bottom: 10px;
-  }
-  
-  .form-header p {
-    font-size: clamp(13px, 3vw, 15px);
-    margin-bottom: 20px;
-  }
-  
+
   .form-control {
-    font-size: 15px;
-    padding: 12px 15px;
-    margin-bottom: 15px;
-  }
-  
-  .submit-btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    margin-top: 10px;
+    width: 100%; /* expand inputs for smaller screens */
   }
 }
 
-/* Small mobile phones */
+@media (max-width: 768px) {
+  .info-section {
+    grid-template-columns: 1fr; /* stack info items */
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .form-header h2 {
+    font-size: 20px;
+  }
+
+  .form-header p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 480px) {
   .contact-container {
     width: 95%;
     margin-left: 2.5%;
-    margin-top: 5%;
   }
-  
-  .info-section,
-  .form-section {
-    padding: 15px;
-  }
-  
-  .contact-item {
-    padding: 12px;
-  }
-  
-  .contact-item i {
-    font-size: 16px;
-  }
-  
-  .form-header h2 {
-    font-size: 18px;
-  }
-  
-  .form-header p {
-    font-size: 13px;
-  }
-  
+
   .form-control {
     font-size: 14px;
-    padding: 10px 12px;
+    padding: 6px 12px;
   }
-  
+
   .submit-btn {
     font-size: 14px;
-    padding: 12px;
-  }
-  
-  .social-links a {
-    width: 35px;
-    height: 35px;
-    font-size: 14px;
+    padding: 6px 12px;
   }
 }
 
-/* Very small phones */
-@media (max-width: 360px) {
-  .contact-container {
-    width: 98%;
-    margin-left: 1%;
-    margin-top: 4%;
-  }
-  
-  .info-section,
-  .form-section {
-    padding: 12px;
-  }
-  
-  .form-header h2 {
-    font-size: 16px;
-  }
-  
-  .form-header p {
-    font-size: 12px;
-  }
-  
-  .form-control {
-    font-size: 13px;
-    padding: 8px 10px;
-  }
-  
-  .submit-btn {
-    font-size: 13px;
-    padding: 10px;
-  }
-  
-  .contact-item {
-    padding: 10px;
-    font-size: 13px;
-  }
-  
-  .social-links a {
-    width: 32px;
-    height: 32px;
-    font-size: 13px;
-  }
-}
-
-
-/* Content sections for all screen sizes */
-@media screen and (max-width: 768px) {
-  .content-section h1 {
-    font-size: clamp(28px, 7vw, 45px);
-    text-align: center;
-    margin: 20px 0;
-    line-height: 1.3;
-  }
-  
-  .content-section .button {
-    text-align: center;
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .content-section .button a {
-    padding: clamp(8px, 2.5vw, 12px) clamp(12px, 4vw, 18px);
-    margin: 5px;
-    display: inline-block;
-    font-size: clamp(13px, 3vw, 16px);
-    min-height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
-  
-  /* Container improvements */
-  .container {
-    width: 100%;
-    margin: 20px 0;
-    padding: 0 clamp(10px, 4vw, 60px);
-    box-sizing: border-box;
-  }
-  
-  .container .row {
-    flex-direction: column;
-    padding: 0;
-    gap: 20px;
-  }
-  
-  .content {
-    width: 100%;
-    margin: 20px 0;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-  
-  .content h1 {
-    font-size: clamp(24px, 6vw, 36px);
-    margin: 15px 0;
-    line-height: 1.3;
-  }
-  
-  .content h3 {
-    font-size: clamp(16px, 4vw, 20px);
-    margin: 12px 0;
-    line-height: 1.4;
-  }
-  
-  .content a {
-    font-size: clamp(14px, 3.5vw, 18px);
-    line-height: 1.5;
-  }
-  
-  .content p {
-    font-size: clamp(14px, 3.5vw, 16px);
-    line-height: 1.6;
-    margin: 15px 0;
-  }
-  
-  /* Image responsiveness */
-  .image-section img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-
-  /* News section responsiveness */
-  .news-section .section-content {
-    padding: 0 clamp(10px, 4vw, 60px);
-  }
-  
-  .news-section .section-content .cards {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin: 20px 0;
-  }
-  
-  .news-section .cards .card {
-    margin-bottom: 15px;
-  }
-}
-
-/* Ensure all interactive elements are touch-friendly */
-@media screen and (max-width: 768px) {
-  /* Minimum touch target size */
-  button, 
-  .btn, 
-  .submit-btn,
-  .nav-menu ul li a,
-  .content-section .button a {
-    min-height: 44px;
-    min-width: 44px;
-  }
-  
-  /* Better form spacing */
-  .form-control {
-    margin-bottom: 15px;
-  }
-  
-  /* Improve readability */
-  body {
-    font-size: 16px; /* Prevents zoom on iOS */
-    line-height: 1.6;
-  }
-  
-  /* Better spacing for sections */
-  section {
-    padding: 20px 0;
-  }
-}
-
-/* Very small screens optimization */
-@media screen and (max-width: 360px) {
-  .contact-container {
-    width: 98%;
-    margin-left: 1%;
-    margin-top: 3%;
-  }
-  
-  .info-section,
-  .form-section {
-    padding: 10px;
-  }
-  
-  .form-header h2 {
-    font-size: 16px;
-  }
-  
-  .form-header p {
-    font-size: 12px;
-  }
-  
-  .form-control {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
-  
-  .submit-btn {
-    font-size: 13px;
-    padding: 10px;
-  }
-}
 
 /*Staff*/
 .team-section{
@@ -1436,7 +802,7 @@
     .album-title {
         font-size: 1.3em;
     }
-} /*Gallery Styles */
+} /*Gallery Styles - Replace your existing gallery CSS with this */
 
 .gallery-section {
     width: 100%;
@@ -1767,335 +1133,29 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(243, 235, 235);
 }
-/* MVA SECTION RESPONSIVE STYLES */
-
-/* Base styles for all devices */
-.mva-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.mva-block {
-  display: flex;
-  align-items: center;
-  margin-bottom: clamp(30px, 5vw, 60px);
-  gap: 20px;
-  min-height: 300px;
-}
-
-.mva-block .img,
-.mva-block .content {
-  flex: 1;
-  transition: all 0.3s ease;
-}
-
-.mva-block .img img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-}
-
-.mva-block .content {
-  padding: 20px;
-}
-
-.mva-block .content h2 {
-  font-size: clamp(24px, 4vw, 32px);
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.mva-block .content p {
-  font-size: clamp(14px, 3vw, 18px);
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-/* Large Desktop (1200px+) */
-@media screen and (min-width: 1200px) {
-  .mva-container {
-    padding: 40px;
-  }
-  
-  .mva-block {
-    gap: 40px;
-    margin-bottom: 80px;
-  }
-  
-  /* Odd blocks: Image left, Content right */
-  .mva-container .mva-block:nth-child(odd) .img {
-    order: 1;
-  }
-  
-  .mva-container .mva-block:nth-child(odd) .content {
-    order: 2;
-    padding-left: 30px;
-    padding-right: 0;
-  }
-  
-  /* Even blocks: Content left, Image right */
-  .mva-container .mva-block:nth-child(even) .img {
-    order: 2;
-  }
-  
-  .mva-container .mva-block:nth-child(even) .content {
-    order: 1;
-    padding-left: 0;
-    padding-right: 30px;
-  }
-}
-
-/* Desktop (1024px - 1199px) */
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-  .mva-container {
-    padding: 30px;
-  }
-  
-  .mva-block {
-    gap: 30px;
-    margin-bottom: 60px;
-  }
-  
-  /* Odd blocks: Image left, Content right */
-  .mva-container .mva-block:nth-child(odd) .img {
-    order: 1;
-  }
-  
-  .mva-container .mva-block:nth-child(odd) .content {
-    order: 2;
-    padding-left: 20px;
-    padding-right: 0;
-  }
-  
-  /* Even blocks: Content left, Image right */
-  .mva-container .mva-block:nth-child(even) .img {
-    order: 2;
-  }
-  
-  .mva-container .mva-block:nth-child(even) .content {
-    order: 1;
-    padding-left: 0;
-    padding-right: 20px;
-  }
-}
-
-/* Tablet and Large Mobile (769px - 1023px) */
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  .mva-container {
-    padding: 25px;
-  }
-  
-  .mva-block {
-    gap: 25px;
-    margin-bottom: 50px;
-  }
-  
-  /* Simplified alternating layout for tablets */
-  .mva-container .mva-block:nth-child(odd) .img {
-    order: 1;
-  }
-  
-  .mva-container .mva-block:nth-child(odd) .content {
-    order: 2;
-    padding-left: 15px;
-    padding-right: 0;
-  }
-  
-  .mva-container .mva-block:nth-child(even) .img {
-    order: 2;
-  }
-  
-  .mva-container .mva-block:nth-child(even) .content {
-    order: 1;
-    padding-left: 0;
-    padding-right: 15px;
-  }
-}
-
-/* Mobile Devices (768px and below) */
-@media screen and (max-width: 768px) {
-  .mva-container {
-    padding: 20px 15px;
-  }
-  
-  .mva-block {
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 40px;
-    min-height: auto;
-    text-align: center;
-  }
-  
-  /* Reset all orders for mobile - stack vertically */
-  .mva-container .mva-block .img,
-  .mva-container .mva-block .content {
-    order: unset;
-    width: 100%;
-    padding: 0;
-  }
-  
-  .mva-block .img {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .mva-block .content {
-    padding: 20px 15px;
-  }
-  
-  .mva-block .content h2 {
-    margin-bottom: 12px;
-  }
-}
-
-/* Small Mobile (481px - 768px) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .mva-container {
-    padding: 20px;
-  }
-  
-  .mva-block .content {
-    padding: 25px 20px;
-  }
-  
-  .mva-block .img {
-    max-width: 450px;
-  }
-}
-
-/* Very Small Mobile (361px - 480px) */
-@media screen and (max-width: 480px) {
-  .mva-container {
-    padding: 15px 10px;
-  }
-  
-  .mva-block {
-    gap: 15px;
-    margin-bottom: 30px;
-  }
-  
-  .mva-block .content {
-    padding: 15px 10px;
-  }
-  
-  .mva-block .content h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  
-  .mva-block .content p {
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-  
-  .mva-block .img {
-    max-width: 100%;
-  }
-}
-
-/* Extra Small Mobile (up to 360px) */
-@media screen and (max-width: 360px) {
-  .mva-container {
-    padding: 12px 8px;
-  }
-  
-  .mva-block {
-    gap: 12px;
-    margin-bottom: 25px;
-  }
-  
-  .mva-block .content {
-    padding: 12px 8px;
-  }
-  
-  .mva-block .content h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
-  }
-  
-  .mva-block .content p {
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-}
-
-/* Add subtle animations */
-@media screen and (min-width: 769px) {
-  .mva-block {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease forwards;
-  }
-  
-  .mva-block:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  
-  .mva-block:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Improve image loading */
-.mva-block .img {
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.mva-block .img img {
-  transition: transform 0.3s ease;
-}
-
-.mva-block .img img:hover {
-  transform: scale(1.02);
-}
-
-/* Better typography on mobile */
-@media screen and (max-width: 768px) {
-  .mva-block .content h2 {
-    font-weight: 600;
-    color: #2c3e50;
-    text-align: center;
-  }
-  
-  .mva-block .content p {
-    text-align: justify;
-    color: #555;
-  }
-}
-
-/* Accessibility improvements */
-@media (prefers-reduced-motion: reduce) {
-  .mva-block {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-  
-  .mva-block .img img {
-    transition: none;
-  }
-  
-  .mva-block .img img:hover {
-    transform: none;
-  }
+@media screen and (min-width: 1024px) {
+    .mva-container .mva-block:nth-child(odd) .img {
+        order: 1;
+    }
+    .mva-container .mva-block:nth-child(odd) .content {
+        order: 2;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .mva-container .mva-block:nth-child(even) .img {
+        order: 2;
+    }
+    .mva-container .mva-block:nth-child(even) .content {
+        order: 1;
+        padding-left: 0;
+        padding-right: 20px;
+    }
 }
 html {
     scroll-behavior: smooth;
 }
 
-
+/* Optional: Offset for fixed navbar */
 #about {
     scroll-margin-top: 80px; /* Adjust based on your navbar height */
 }
