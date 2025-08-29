@@ -275,7 +275,6 @@
 @media screen and (max-width: 768px){
     .toggle-btn{
         display: flex;
-        padding-right: 5px;
     }
     .navbar{
         padding: 0px 0px;
